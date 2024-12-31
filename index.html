@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step-Up Quest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpg" href="logo.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1 class="instructions">Bienvenue dans le jeu 'Step-Up Quest!' </h1>
+    <p class="instructions">
+      Le but du jeu est de cliquer sur tous les boutons <strong>verts foncés</strong> avant la fin du temps. <br>
+      Attention : Si vous cliquez sur un bouton <strong>vert clair</strong> ou si le temps expire, vous recommencerez le niveau !
+    </p>
+    <button id="startGame" class="btn primary-btn">Commencer le jeu</button>
+  </div>
+
+  <div class="game hidden">
+    <h1 id="levelTitle" class="title">Niveau 1</h1>
+    <p id="timer" class="timer">Temps restant : 30s</p>
+    <div id="gameArea" class="game-area"></div>
+  </div>
+
+  <div class="message hidden">
+    <div class="message-content">
+      <h2 id="congratsMessage" class="message-title"></h2>
+      <p id="motivationalQuote" class="message-quote"></p>
+      <button id="nextLevel" class="btn secondary-btn">Passer au niveau suivant</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>/
